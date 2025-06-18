@@ -1,0 +1,41 @@
+=begin pod
+
+=head1 NAME
+
+L10N::PT - Portuguese localization of Raku
+
+=head1 SYNOPSIS
+
+=begin output
+$ porku -e 'diga "Olá Mundo"'
+Olá Mundo
+=end output
+
+=begin code :lang<raku>
+
+use L10N::PT;
+diga "Olá Mundo";
+
+=end code
+
+=head1 DESCRIPTION
+
+The C<L10N::PT> distribution contains the logic to provide a Portuguese
+localization of the Raku Programming Language.  It installs a
+C<porku> executable that will automatically activate the Portuguese
+localization.  And it allows one to use the Portuguese localization
+in selected programs with a C<use L10N::PT> statement.
+
+=head1 AUTHORS
+
+Fernando Corrêa de Oliveira
+
+=head1 COPYRIGHT AND LICENSE
+
+Copyright 2023, 2025 Raku Localization Team
+
+This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
+
+=end pod
+
+# vim: expandtab shiftwidth=4
