@@ -2,6 +2,11 @@ Revision history for L10N-PT
 
 {{$NEXT}}
 
+0.0.3  2025-06-27T18:40:53+02:00
+    - Updated internals to new L10N file layout
+    - Add "churras" as a Brazilian themed executable
+    - Add "denata" as a European Portugal themed executable
+
 0.0.2  2025-06-18T16:07:52+02:00
     - Add support for "porku" executable
     - Update several translations

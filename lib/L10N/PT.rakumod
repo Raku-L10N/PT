@@ -1,7 +1,7 @@
 # This file contains the Portuguese Slang of the Raku Programming Language
 
 #- start of generated part of localization ------------------------------------
-#- Generated on 2025-06-18T16:05:40+02:00 by ./update-localization
+#- Generated on 2025-06-26T14:17:34+02:00 by ./update-localization
 #- PLEASE DON'T CHANGE ANYTHING BELOW THIS LINE
 
 role L10N::PT {
