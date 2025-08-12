@@ -197,6 +197,7 @@ core-indent     indente
 core-index      indice
 core-indices    indices
 #core-indir      indir
+#core-invert     invert
 core-is         é
 #core-is-approx  is-approx
 #core-is-deeply  is-deeply

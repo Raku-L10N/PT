@@ -13,6 +13,7 @@ Olá Mundo
 
 =begin code :lang<raku>
 
+# Must have RAKUDO_RAKUAST=1 environment variable set
 use L10N::PT;
 diga "Olá Mundo";
 
