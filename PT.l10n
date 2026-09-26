@@ -24,8 +24,8 @@
 #adverb-q-double      double
 #adverb-q-exec        exec
 #adverb-q-f           f
-#adverb-q-function    function
 #adverb-q-format      format
+#adverb-q-function    function
 #adverb-q-h           h
 #adverb-q-hash        hash
 #adverb-q-heredoc     heredoc
@@ -99,7 +99,11 @@ constraint-where  quando
 
 # KEY                  TRANSLATION
 #core-abs               abs
+#core-accessed          accessed
+#core-actions           actions
+#core-add               add
 core-all               todos
+#core-antipair          antipair
 #core-antipairs         antipairs
 core-any               algum
 core-append            insere-no-final
@@ -116,59 +120,83 @@ core-atomic-inc-fetch  incrementa-e-retorna-atomicamente
 core-atomic-sub-fetch  subtrai-e-retorna-atomicamente
 core-await             espera
 
-# KEY          TRANSLATION
-core-bag       bolsa
-#core-bail-out  bail-out
-core-bless     abençoa
+# KEY           TRANSLATION
+#core-backtrace  backtrace
+core-bag        bolsa
+#core-bail-out   bail-out
+#core-base       base
+#core-batch      batch
+core-bless      abençoa
 
 # KEY              TRANSLATION
+#core-cache         cache
 #core-callframe     callframe
 #core-callsame      callsame
 #core-callwith      callwith
 #core-can-ok        can-ok
+#core-caps          caps
 #core-cas           cas
 core-categorize    categorize
-# core-ceiling       soffitto
+#core-ceiling       ceiling
+#core-changed       changed
 #core-chars         chars
 #core-chdir         chdir
+#core-child         child
 #core-chmod         chmod
 #core-chomp         chomp
 #core-chop          chop
 #core-chown         chown
 #core-chr           chr
 #core-chrs          chrs
+#core-chunks        chunks
 core-classify      classifique
-# core-close         chide
+#core-cleanup       cleanup
+#core-clone         clone
+#core-close         close
 #core-cmp-ok        cmp-ok
 #core-codes         codes
-# core-comb          pettine
+#core-comb          comb
 core-combinations  combinações
 #core-conj          conj
+#core-contains      contains
 core-cross         cruz
 
-# KEY         TRANSLATION
-#core-decode   decode
-# core-deepmap  mappa-profonda
-core-defined  definido
-#core-diag     diag
-core-die      morra
-#core-dies-ok  dies-ok
-#core-dir      dir
-#core-does-ok  does-ok
-core-done     feito
-# core-duckmap  mappa-anatra
+# KEY                  TRANSLATION
+#core-day-of-week       day-of-week
+#core-day-of-year       day-of-year
+#core-daycount          daycount
+#core-days-in-month     days-in-month
+#core-days-in-year      days-in-year
+#core-dd-mm-yyyy        dd-mm-yyyy
+#core-decode            decode
+#core-deepmap           deepmap
+core-defined           definido
+#core-dev               dev
+#core-devtype           devtype
+#core-diag              diag
+core-die               morra
+#core-dies-ok           dies-ok
+#core-dir               dir
+#core-dir-with-entries  dir-with-entries
+#core-does-ok           does-ok
+core-done              feito
+#core-duckmap           duckmap
 
 # KEY               TRANSLATION
+#core-eager          eager
+#core-earlier        earlier
 #core-elems          elems
 core-emit           emita
 #core-encode         encode
 core-end            fim
 core-ends-with      termina-com
+#core-enums          enums
 #core-eval-dies-ok   eval-dies-ok
 #core-eval-lives-ok  eval-lives-ok
 core-exit           saia
 #core-exp            exp
 #core-expmod         expmod
+#core-extension      extension
 
 # KEY              TRANSLATION
 core-fail          falhe
@@ -176,35 +204,45 @@ core-fail          falhe
 #core-fc            fc
 core-first         primo
 core-flat          plano
+#core-flatmap       flatmap
 #core-flip          flip
 core-floor         chão
 #core-flunk         flunk
 #core-fmt           fmt
-# core-full-barrier  barriera-completa
+#core-from          from
+#core-full-barrier  full-barrier
 
-# KEY      TRANSLATION
-core-get   pegue
-#core-getc  getc
-core-gist  essencia
-#core-grep  grep
+# KEY           TRANSLATION
+core-get        pegue
+#core-getc       getc
+core-gist       essencia
+#core-grab       grab
+#core-grabpairs  grabpairs
+#core-grep       grep
+#core-group      group
 
 # KEY      TRANSLATION
 #core-hash  hash
 core-head  cabeça
 
-# KEY           TRANSLATION
-core-indent     indente
-core-index      indice
-core-indices    indices
-#core-indir      indir
-#core-invert     invert
-core-is         é
-#core-is-approx  is-approx
-#core-is-deeply  is-deeply
-#core-is-prime   is-prime
-#core-isa-ok     isa-ok
-core-isnt       não-é
-core-item       item
+# KEY             TRANSLATION
+#core-im           im
+core-indent       indente
+core-index        indice
+core-indices      indices
+#core-indir        indir
+#core-inode        inode
+#core-invert       invert
+#core-IO           IO
+core-is           é
+#core-is-absolute  is-absolute
+#core-is-approx    is-approx
+#core-is-deeply    is-deeply
+#core-is-prime     is-prime
+#core-is-relative  is-relative
+#core-isa-ok       isa-ok
+core-isnt         não-é
+core-item         item
 
 # KEY      TRANSLATION
 core-join  junta
@@ -217,6 +255,7 @@ core-kv    cv
 # KEY          TRANSLATION
 core-last      último
 core-lastcall  última-chamada
+#core-later     later
 #core-lc        lc
 #core-like      like
 core-lines     linhas
@@ -225,17 +264,20 @@ core-list      lista
 #core-lives-ok  lives-ok
 #core-lsb       lsb
 
-# KEY        TRANSLATION
-core-make    faça
-# core-map     mappa
-#core-match   match
-#core-max     max
-#core-min     min
-#core-minmax  minmax
-#core-mix     mix
-#core-mkdir   mkdir
-core-move    mova
-#core-msb     msb
+# KEY            TRANSLATION
+#core-made        made
+core-make        faça
+#core-map         map
+#core-match       match
+#core-max         max
+#core-message     message
+#core-min         min
+#core-minmax      minmax
+#core-mix         mix
+#core-mkdir       mkdir
+#core-mm-dd-yyyy  mm-dd-yyyy
+core-move        mova
+#core-msb         msb
 
 # KEY            TRANSLATION
 #core-new         new
@@ -254,30 +296,45 @@ core-one   um
 core-open  aberto
 #core-ord   ord
 #core-ords  ords
+#core-orig  orig
 
 # KEY              TRANSLATION
 core-pair          par
 core-pairs         pares
+#core-parent        parent
+#core-parse         parse
 #core-parse-base    parse-base
 #core-pass          pass
+#core-path          path
 core-permutations  permutações
-# core-pick          prendi
+#core-pick          pick
 #core-plan          plan
 #core-pop           pop
+#core-pos           pos
+#core-postmatch     postmatch
+#core-pred          pred
+#core-prematch      prematch
 #core-prepend       prepend
 core-print         escreva
 core-printf        escreva-formatado
 core-proceed       siga
-# core-prompt        richiesta
-# core-push          spinge
-# core-put           metti
+#core-produce       produce
+#core-prompt        prompt
+#core-push          push
+#core-put           put
 
 # KEY            TRANSLATION
+#core-raku        raku
 #core-rand        rand
+#core-re          re
 core-redo        refaça
 core-reduce      reduza
+#core-relative    relative
 core-repeated    repetido
 #core-repl        repl
+#core-resolve     resolve
+#core-resume      resume
+#core-rethrow     rethrow
 core-return      retorne
 core-return-rw   retorne-rw
 #core-reverse     reverse
@@ -286,47 +343,51 @@ core-return-rw   retorne-rw
 #core-roll        roll
 #core-roots       roots
 #core-rotate      rotate
+#core-rotor       rotor
 #core-round       round
 #core-roundrobin  roundrobin
 #core-run         run
 
 # KEY             TRANSLATION
-# core-samecase     stesso-caso
-# core-samemark     stessa-marca
-# core-samewith     stessa-con
+#core-samecase     samecase
+#core-samemark     samemark
+#core-samewith     samewith
 core-say          diga
 #core-set          set
 #core-shell        shell
-# core-shift        sposta
+#core-shift        shift
 core-sign         assine
 core-signal       sinal
+#core-sink         sink
 core-skip         pula
 #core-skip-rest    skip-rest
 core-sleep        durma
 #core-sleep-timer  sleep-timer
 core-sleep-until  durma-até
-# core-slip         scivola
-# core-slurp        bevi
-# core-snip         taglia
-# core-snitch       fail-la-spia
-# core-so           così
+#core-slip         slip
+#core-slurp        slurp
+#core-snip         snip
+#core-snitch       snitch
+#core-so           so
 core-sort         ordene
-# core-splice       unisci
-# core-split        divitevi
+#core-splice       splice
+#core-split        split
 #core-sprintf      sprintf
-# core-spurt        spruzza
+#core-spurt        spurt
 #core-sqrt         sqrt
 core-squish       encolha
 #core-srand        srand
 #core-starts-with  starts-with
 #core-subbuf       subbuf
 #core-subbuf-rw    subbuf-rw
+#core-subparse     subparse
 #core-subst        subst
 #core-substr       substr
 #core-substr-eq    substr-eq
 #core-substr-rw    substr-rw
 #core-subtest      subtest
-# core-succeed      riuscirci
+#core-succ         succ
+#core-succeed      succeed
 core-sum          some
 #core-symlink      symlink
 
@@ -334,16 +395,20 @@ core-sum          some
 core-tail           cauda
 core-take           pegue
 core-take-rw        pegue-rw
+#core-target         target
 #core-tc             tc
 #core-tclc           tclc
 #core-temp           temp
+#core-throw          throw
 #core-throws-like    throws-like
+#core-to             to
+#core-today          today
 #core-todo           todo
 #core-trans          trans
-# core-trim           taglia
-# core-trim-leading   taglia-in-testa
-# core-trim-trailing  taglia-in-coda
-# core-truncate       troncare
+#core-trim           trim
+#core-trim-leading   trim-leading
+#core-trim-trailing  trim-trailing
+#core-truncate       truncate
 
 # KEY          TRANSLATION
 #core-uc        uc
@@ -361,21 +426,30 @@ core-take-rw        pegue-rw
 #core-unpolar   unpolar
 #core-unshift   unshift
 #core-use-ok    use-ok
+#core-user      user
 
 # KEY        TRANSLATION
 #core-val     val
 core-value   valor
 core-values  valores
 
-# KEY          TRANSLATION
-core-warn      avise
-# core-wordcase  caso-della-parola
-core-words     palavras
+# KEY                  TRANSLATION
+core-warn              avise
+#core-watch             watch
+#core-week              week
+#core-week-number       week-number
+#core-week-year         week-year
+#core-weekday-of-month  weekday-of-month
+#core-wordcase          wordcase
+core-words             palavras
+
+# KEY            TRANSLATION
+#core-yyyy-mm-dd  yyyy-mm-dd
 
 # KEY     TRANSLATION
 #core-zip  zip
 
-# KEY       TRANSLATION
+# KEY                   TRANSLATION
 #enum-BigEndian          BigEndian
 enum-Broken             Quebrada
 enum-False              Falso
@@ -410,6 +484,7 @@ infix-but         mas
 #infix-div         div
 infix-does        faz
 #infix-eq          eq
+#infix-eqv         eqv
 #infix-ff          ff
 #infix-ff^         ff^
 #infix-fff         fff
@@ -427,12 +502,13 @@ infix-does        faz
 #infix-mod         mod
 #infix-ne          ne
 infix-notandthen  não-então
-# infix-o           c
+#infix-o           o
 infix-or          ou
 infix-orelse      ou-senão
 #infix-unicmp      unicmp
 #infix-x           x
 #infix-X           X
+#infix-xor         xor
 #infix-xx          xx
 #infix-Z           Z
 
@@ -474,6 +550,7 @@ multi-only   só
 #named-bin        bin
 #named-bleed      bleed
 #named-broadcast  broadcast
+#named-by         by
 
 # KEY             TRANSLATION
 #named-catch       catch
@@ -487,16 +564,18 @@ multi-only   só
 #named-control     control
 #named-count       count
 #named-create      create
+#named-created     created
 #named-createonly  createonly
 #named-cwd         cwd
 #named-CWD         CWD
 
-# KEY          TRANSLATION
-#named-date     date
-#named-day      day
-#named-degree   degree
-#named-delete   delete
-#named-dirname  dirname
+# KEY           TRANSLATION
+#named-datagram  datagram
+#named-date      date
+#named-day       day
+#named-degree    degree
+#named-delete    delete
+#named-dirname   dirname
 
 # KEY             TRANSLATION
 #named-elems       elems
@@ -547,13 +626,14 @@ multi-only   só
 #named-localhost  localhost
 #named-localport  localport
 
-# KEY         TRANSLATION
-#named-match   match
-#named-merge   merge
-#named-minute  minute
-#named-mm      mm
-#named-mode    mode
-#named-month   month
+# KEY           TRANSLATION
+#named-match     match
+#named-merge     merge
+#named-minute    minute
+#named-mm        mm
+#named-mode      mode
+#named-modified  modified
+#named-month     month
 
 # KEY               TRANSLATION
 #named-name          name
@@ -665,7 +745,7 @@ phaser-LEAVE    SAIDA
 phaser-NEXT     PRÓXIMO
 #phaser-POST     POST
 #phaser-PRE      PRE
-# phaser-QUIT     LASCIA
+#phaser-QUIT     QUIT
 phaser-UNDO     DESFAZ
 
 # KEY                      TRANSLATION
@@ -689,15 +769,7 @@ phaser-UNDO     DESFAZ
 
 # KEY       TRANSLATION
 prefix-not  não
-# prefix-so   così
-
-# KEY              TRANSLATION
-routine-method     método
-#routine-regex      regex
-routine-rule       regra
-#routine-sub        sub
-#routine-submethod  submethod
-# routine-token      gettone
+#prefix-so   so
 
 # KEY          TRANSLATION
 #quote-lang-m   m
@@ -711,9 +783,17 @@ routine-rule       regra
 #quote-lang-ss  ss
 #quote-lang-Ss  Ss
 
+# KEY              TRANSLATION
+routine-method     método
+#routine-regex      regex
+routine-rule       regra
+#routine-sub        sub
+#routine-submethod  submethod
+#routine-token      token
+
 # KEY           TRANSLATION
 #scope-anon      anon
-#scope-augment   aumenta
+#scope-augment   augment
 scope-constant  constante
 scope-has       tem
 scope-HAS       TEM
@@ -730,11 +810,11 @@ stmt-prefix-gather   recolhe
 #stmt-prefix-hyper    hyper
 stmt-prefix-lazy     preguiçoso
 stmt-prefix-quietly  tranquilamente
-# stmt-prefix-race     gara
+#stmt-prefix-race     race
 stmt-prefix-react    reaja
 stmt-prefix-sink     cale
 stmt-prefix-start    comece
-# stmt-prefix-supply   fornitura
+#stmt-prefix-supply   supply
 stmt-prefix-try      tente
 
 # KEY               TRANSLATION
@@ -742,7 +822,7 @@ stmt-prefix-try      tente
 #system-BUILD        BUILD
 #system-CALL-ME      CALL-ME
 #system-COERCE       COERCE
-#system-FALLBACK     WIJKUIT
+#system-FALLBACK     FALLBACK
 #system-MAIN         MAIN
 #system-TWEAK        TWEAK
 #system-UPGRADE-RAT  UPGRADE-RAT
@@ -770,6 +850,7 @@ term-time  tempo
 #trait-is-nodal                  nodal
 #trait-is-pure                   pure
 #trait-is-raw                    raw
+#trait-is-required               required
 #trait-is-rw                     rw
 #trait-is-test-assertion         test-assertion
 #trait-is-tighter                tighter

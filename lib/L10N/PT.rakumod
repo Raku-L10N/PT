@@ -1,7 +1,7 @@
 # This file contains the Portuguese Slang of the Raku Programming Language
 
 #- start of generated part of localization ------------------------------------
-#- Generated on 2025-06-26T14:17:34+02:00 by ./update-localization
+#- Generated on 2026-09-26T11:48:15+02:00 by update-localization.raku
 #- PLEASE DON'T CHANGE ANYTHING BELOW THIS LINE
 
 role L10N::PT {
@@ -55,6 +55,7 @@ role L10N::PT {
     token infix-div { div}
     token infix-does { faz}
     token infix-eq { eq}
+    token infix-eqv { eqv}
     token infix-ff { ff}
     token infix-ffc { "ff^"}
     token infix-fff { fff}
@@ -78,6 +79,7 @@ role L10N::PT {
     token infix-unicmp { unicmp}
     token infix-x { x}
     token infix-X { X}
+    token infix-xor { xor}
     token infix-xx { xx}
     token infix-Z { Z}
     token meta-R { R}

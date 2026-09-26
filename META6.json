@@ -3,27 +3,25 @@
   "authors": [
     "Fernando Corrêa de Oliveira"
   ],
-  "build-depends": [
-  ],
   "depends": [
   ],
   "description": "Portuguese localization of Raku",
   "license": "Artistic-2.0",
   "name": "L10N::PT",
-  "perl": "6.d",
   "provides": {
     "L10N::PT": "lib/L10N/PT.rakumod",
     "RakuAST::Deparse::L10N::PT": "lib/RakuAST/Deparse/L10N/PT.rakumod"
   },
-  "resources": [
-  ],
-  "source-url": "https://github.com/Raku-L10N/PT.git",
+  "raku": "6.d",
+  "support": {
+    "bugtracker": "https://github.com/Raku-L10N/PT/issues",
+    "email": "l10n@raku.org",
+    "source": "https://github.com/Raku-L10N/PT.git"
+  },
   "tags": [
     "LOCALIZATION",
     "PORTUGUESE",
     "PT"
-  ],
-  "test-depends": [
   ],
   "version": "0.0.3"
 }
