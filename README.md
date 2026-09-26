@@ -12,6 +12,8 @@ SYNOPSIS
     Olá Mundo
 
 ```raku
+# Must have RAKUDO_RAKUAST=1 environment variable set
+# when running a Rakudo older than the 2026.09 release
 use L10N::PT;
 diga "Olá Mundo";
 ```
@@ -29,7 +31,7 @@ Fernando Corrêa de Oliveira
 COPYRIGHT AND LICENSE
 =====================
 
-Copyright 2023, 2025 Raku Localization Team
+Copyright 2023, 2025, 2026 Raku Localization Team
 
 This library is free software; you can redistribute it and/or modify it under the Artistic License 2.0.
 
